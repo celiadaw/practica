@@ -28,56 +28,89 @@ header ul {
 
 }
 
-header h1 {
-
-    line-height: 8vh;
-    margin-left:.5em;
-    /*medidad "em" es una medida relativa al tamaño de la letra, 
-    en este caso le  .5 ... que sería la mitad , queremos un margen de la mitad del tamaño de la letra,*/
-}
-
-.menu-button {
-    display: inline-block;
-    margin: 1vh;
-    height: 6vh;
-    width: 6vh;
-    border: 1px solid black;
-    line-height: 6vh;
-    text-align: center;
-  }
-  
-
 
 .iconoMenu {
     display: inline-block ;
-    display: inline-block;
+    
     margin: 1vh;
     height: 6vh;
     width: 6vh;
     line-height: 6vh;
-    text-align: center;
+    user-select: none;
+    
+    
 
 }
 
 
-@media screen and (min-width: 768px){
 
-    @media screen and (min-width: 768px){
-        .menu-button{
-          display: none;
-        }
-    .iconoMenu{
-      display: none;
-    }
-    
-    nav ul{
-      display: block;
-    }
-    
-    nav ul li{
-      list-style: none;
-      display: inline-block;
-      line-height: 8vh;
-      margin: 0 .5em;
-    }
-  }
+
+@media screen and (min-width: 768px){
+          .menu-button{
+            display: none;
+          }
+      .iconoMenu{
+        display: none;
+      }
+      
+      nav ul{
+        display: block;
+      }
+      
+      nav ul li{
+        list-style: none;
+        display: inline-block;
+        line-height: 8vh;
+        margin: 0 .5em;
+      }
+}
+/* apartir de aquí damos funcionalidad a nuestro menú*/
+
+/* ocultamos la lista  */
+
+ul{
+  position: relative;
+  display:none;
+  width: 200px;
+  background: lightcyan;
+ 
+}
+/* y aquí modificamos el estilo de la lista  cuando el check este seleccionado */
+input:checked ~ ul {
+  display: block;
+
+}
+
+/* Ocultamos el input para que "no se vea feo" */
+
+input {
+  display: none;
+}
+
+/* estilo en menu  */
+
+header ul li {
+  display: block;
+  margin: 0;
+  padding: 10px;
+  list-style: none;
+
+
+
+
+}
+
+
+
+
+
+
+li a {
+  text-decoration: none;
+  color: black;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: bold;
+
+
+}
+
