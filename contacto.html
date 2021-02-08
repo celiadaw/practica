@@ -3,9 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="StyleSheet" type="text/css" href="style.css">
     <title>Document</title>
 </head>
 <body>
+ <header>
+    <nav>
+        <input type="checkbox" id="menu">
+        <label for="menu"> <img class="iconoMenu" src="img/iconoMenu.png" alt="="> </label>
     
+    <ul>
+        <li><a href="#">PÁGINA PRINCIPAL</a></li>
+        <li><a href="#">Trabajo</a></li>
+        <li><a href="#">Contacto</a></li>
+        
+    </ul>
+
+</nav>
+ </header>
+  <main class="wrapper">
+    <h1>Contacto</h1>
+        <section>
+            <form action="https://w3schools.com/action_page.php" method="POST">
+        <fieldset id="datosPersonales">
+            <legend><h2>Datos personales</h2></legend>
+            <label for="nombre">Nombre</label>:<br>
+            <input type="text" name="nombre"
+            id="nombreContacto" placeholder="Escribe tu nombre" tabindex="1"><br>
+
+            <label for="apellidos">Apellidos</label>:<br>
+            <input type="text" name="apellidos" id="apellidosContacto" placeholder="Escribe tus apellidos" tabindex="2"><br>
+
+            <label for="sexo">Sexo</label>:<br>
+            <input type="radio" name="sexo" id="sexoContactoM" value="masculino"
+            tabindex="3" >Masculino<br>
+            <input type="radio" name="sexo" id="sexoContactoF" value="femenino"
+            tabindex="4" >Femenino<br>
+
+            <label for="edad">Edad</label>:<br>
+            <input type="number" name="edad" id="edadContacto" placeholder="Escribe tu edad " tabindex="5"><br>
+
+        </fieldset>   
+      
+     </section>
+     <section>
+
+         <fieldset id="datosDeContacto">
+             <legend>
+            <h2>Datos de contacto</h2>
+         </legend>
+         <label for="email">Email</label>:<br>
+         <input type="email" name="email" id="emailContacto"  placeholder="introduce tu email" tabindex="6"><br>
+
+         <label for="telefono">Teléfono</label><br>
+         <input type="tel" name="telefono" id="telefonoContacto" pattern="[0-9]{3}-[0-9]{3}[0-9]{3}" placeholder="000-000-000" tabindex="7"><br>
+
+        </fieldset>
+        
+              
+     </section>
+     <section>
+      
+            <fieldset id="descripcion">
+                <legend>
+               <h2>Descripcion</h2>
+            </legend>
+            <label for="disponibilidad">Disponibilidad</label>:<br>
+            <select name="disponibilidad" id="disponibilidadContacto" tabindex="8"><br>
+                <optgroup label="Lunes-Viernes"><br>
+                    <option value="lVMañanas">Por las Mañanas</option>
+                    <option value="lVTardes">Por las tardes</option>
+                 </optgroup>
+                 <optgroup label="Sabados">
+                    <option value="sM">Por las Mañanas</option>
+                    <option value="sT">Por las tardes</option>
+                 </optgroup>
+            </select>
+             <br>
+            <label for="descripcion">Escribe tu pregunta:</label>:<br>
+            <textarea name="descripcion" id="descriptionContacto"  tabindex="9"></textarea><br>
+        </fieldset>            
+     </section>
+     <section>
+        <h2>Guardar</h2>
+        <input type="submit" value="Guardar"><br>       
+        <label for="borrarTodo"> Eliminar los datos</label>:<br>
+        <input type="reset" name="borrarTodo" id="borrarTodo"><br>
+           
+     </section>
+    </form>
+  </main>
+        <footer></footer>
 </body>
 </html>

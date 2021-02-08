@@ -8,13 +8,20 @@
 /*MENÚ*/
 
 /*
-    MOBILE VERSION 
+    MOBILE VERSION ---360 o menos
 */
+footer{
+  background-color: rgb(120, 133, 128);
+  height: 8vh;
+  /* vh determina porcentaje del viewport .. en este casoo seria 8/100*/
+  display:flex;
+  justify-content: space-between;
 
+}
 
 
 header {
-    background-color: aquamarine;
+    background-color: rgb(120, 133, 128);
     height: 8vh;
     /* vh determina porcentaje del viewport .. en este casoo seria 8/100*/
     display:flex;
@@ -37,7 +44,7 @@ header ul {
     width: 6vh;
     line-height: 6vh;
     user-select: none;
-    
+
     
 
 }
@@ -114,3 +121,73 @@ li a {
 
 }
 
+
+/* CONTACTO MOBILE VERSION */
+
+.wrapper {
+  margin: 0 auto;
+  width: 100%;
+  background-color: whitesmoke;
+
+
+}
+
+.container{
+  display:flex;
+  flex-direction: column;
+
+}
+
+/* fuente de body en biografia */
+.fontdiner{
+  font-family: 'Fontdiner Swanky';
+  font-size: 15px;
+
+}
+
+/*TABLET VERSION 361 A 960 */
+@media screen and (min-width:361px){
+.wrapper{
+  width: 360px;
+  background-color: whitesmoke;
+}
+.container{
+
+flex-direction: row;
+
+}
+
+section{
+  margin:0 3%
+
+}
+
+}
+
+
+
+
+
+
+
+/* DESKTOP VERSION   961 o +*/
+
+@media screen and (min-width:961px){
+  .wrapper{
+    width: 960px;
+  }
+  .container{
+  
+  flex-direction: row;
+  
+  }
+  
+ 
+  
+  }
+
+  /* Footer */
+footer{
+  background-color: rgb(120, 133, 128);
+
+}
