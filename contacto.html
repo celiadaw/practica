@@ -8,7 +8,7 @@
 </head>
 <body>
  <header>
-    <nav>
+    <!-- <nav>
         <input type="checkbox" id="menu">
         <label for="menu"> <img class="iconoMenu" src="img/iconoMenu.png" alt="="> </label>
     
@@ -19,58 +19,66 @@
         
     </ul>
 
-</nav>
+</nav> -->
  </header>
   <main class="wrapper">
-    <h1>Contacto</h1>
+    <h1  class="titleContacto">Contacto</h1>
+    <div class="containerContacto">
         <section>
-            <form action="https://w3schools.com/action_page.php" method="POST">
+            <form action="https   //w3schools.com/action_page.php" method="POST">
         <fieldset id="datosPersonales">
             <legend><h2>Datos personales</h2></legend>
-            <label for="nombre">Nombre</label>:<br>
+            <label for="nombre">Nombre   </label>       
             <input type="text" name="nombre"
-            id="nombreContacto" placeholder="Escribe tu nombre" tabindex="1"><br>
+            id="nombreContacto" placeholder="Escribe tu nombre" tabindex="1">
 
-            <label for="apellidos">Apellidos</label>:<br>
-            <input type="text" name="apellidos" id="apellidosContacto" placeholder="Escribe tus apellidos" tabindex="2"><br>
+            <label for="apellidos">Apellidos</label>          
+            <input type="text" name="apellidos" id="apellidosContacto" placeholder="Escribe tus apellidos" tabindex="2">       
 
-            <label for="sexo">Sexo</label>:<br>
+            <label for="sexo">Sexo</label>          
             <input type="radio" name="sexo" id="sexoContactoM" value="masculino"
-            tabindex="3" >Masculino<br>
+            tabindex="3" >Masculino       
             <input type="radio" name="sexo" id="sexoContactoF" value="femenino"
-            tabindex="4" >Femenino<br>
+            tabindex="4" >Femenino       
 
-            <label for="edad">Edad</label>:<br>
-            <input type="number" name="edad" id="edadContacto" placeholder="Escribe tu edad " tabindex="5"><br>
+            <label for="edad">Edad</label>          
+            <input type="number" name="edad" id="edadContacto" placeholder="Escribe tu edad " tabindex="5">       
 
         </fieldset>   
-      
+        <h2>Guardar</h2>
+        <input type="submit" value="Guardar">              
+        <label for="borrarTodo"> Eliminar los datos</label>          
+        <input type="reset" name="borrarTodo" id="borrarTodo">       
+    </form>      
      </section>
      <section>
-
+        <form action="https   //w3schools.com/action_page.php" method="POST">
          <fieldset id="datosDeContacto">
              <legend>
             <h2>Datos de contacto</h2>
          </legend>
-         <label for="email">Email</label>:<br>
-         <input type="email" name="email" id="emailContacto"  placeholder="introduce tu email" tabindex="6"><br>
+         <label for="email">Email</label>          
+         <input type="email" name="email" id="emailContacto"  placeholder="introduce tu email" tabindex="6">       
 
-         <label for="telefono">Teléfono</label><br>
-         <input type="tel" name="telefono" id="telefonoContacto" pattern="[0-9]{3}-[0-9]{3}[0-9]{3}" placeholder="000-000-000" tabindex="7"><br>
+         <label for="telefono">Teléfono</label>       
+         <input type="tel" name="telefono" id="telefonoContacto" pattern="[0-9]{3}-[0-9]{3}[0-9]{3}" placeholder="000-000-000" tabindex="7">       
 
         </fieldset>
-        
-              
+        <h2>Guardar</h2>
+        <input type="submit" value="Guardar">              
+        <label for="borrarTodo"> Eliminar los datos</label>          
+        <input type="reset" name="borrarTodo" id="borrarTodo">       
+    </form>      
      </section>
      <section>
-      
+        <form action="https   //w3schools.com/action_page.php" method="POST">
             <fieldset id="descripcion">
                 <legend>
                <h2>Descripcion</h2>
             </legend>
-            <label for="disponibilidad">Disponibilidad</label>:<br>
-            <select name="disponibilidad" id="disponibilidadContacto" tabindex="8"><br>
-                <optgroup label="Lunes-Viernes"><br>
+            <label for="disponibilidad">Disponibilidad</label>          
+            <select name="disponibilidad" id="disponibilidadContacto" tabindex="8">       
+                <optgroup label="Lunes-Viernes">       
                     <option value="lVMañanas">Por las Mañanas</option>
                     <option value="lVTardes">Por las tardes</option>
                  </optgroup>
@@ -79,19 +87,18 @@
                     <option value="sT">Por las tardes</option>
                  </optgroup>
             </select>
-             <br>
-            <label for="descripcion">Escribe tu pregunta:</label>:<br>
-            <textarea name="descripcion" id="descriptionContacto"  tabindex="9"></textarea><br>
-        </fieldset>            
-     </section>
-     <section>
+                    
+            <label for="descripcion">Escribe tu pregunta   </label>          
+            <textarea name="descripcion" id="descriptionContacto"  tabindex="9"></textarea>       
+        </fieldset> 
         <h2>Guardar</h2>
-        <input type="submit" value="Guardar"><br>       
-        <label for="borrarTodo"> Eliminar los datos</label>:<br>
-        <input type="reset" name="borrarTodo" id="borrarTodo"><br>
-           
+        <input type="submit" value="Guardar">              
+        <label for="borrarTodo"> Eliminar los datos</label>          
+        <input type="reset" name="borrarTodo" id="borrarTodo">       
+    </form>                 
      </section>
-    </form>
+
+    </div>
   </main>
         <footer></footer>
 </body>

@@ -5,11 +5,30 @@
 }
 
 
-/*MENÚ*/
 
-/*
-    MOBILE VERSION ---360 o menos
-*/
+   /* DEFINICIÓN DE CAJAS */
+   section{
+    display:flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-between;
+  } 
+
+ article{
+   display:flex;
+   justify-content: space-between;
+   flex-direction: column;
+ } 
+ 
+ div{
+   display:flex;
+   flex-direction: column;
+ }
+
+ figure{
+   display: flex;
+ }
+
 footer{
   background-color: rgb(120, 133, 128);
   height: 8vh;
@@ -19,15 +38,26 @@ footer{
 
 }
 
+/* 
 
 header {
-    background-color: rgb(120, 133, 128);
-    height: 8vh;
-    /* vh determina porcentaje del viewport .. en este casoo seria 8/100*/
-    display:flex;
-    justify-content: space-between;
+
+  background-color: rgb(177, 231, 235);
+  height: 8vh;
+  /* vh determina porcentaje del viewport .. en este casoo seria 8/100*/
+  display:flex;
+   justify-content: space-between;
+  flex-direction: row-reverse; 
 
 }
+
+/*MENÚ*/
+
+/*
+    MOBILE VERSION ---360 o menos
+*/
+
+
 
 header ul {
 
@@ -35,6 +65,28 @@ header ul {
 
 }
 
+/*REVISAR CÓDIGO YA QUE AL DESPLEGAR EL MENU LA LISTA COME EL ESPACIO DE DIV Y EL 
+TEXTO DEL TITULO BAJA Y QUEDA MAL*/
+/* .tituloMenu {
+ 
+display: flex;
+margin: 1vh;
+    height: 6vh;
+    width: 50vh;
+    line-height: 6vh;
+    
+}
+
+.tituloMenu h1 {
+  font-family: 'Franklin Gothic Medium';
+  font-weight: bolder;
+  font-size: 4vh;
+  color: rgb(218, 218, 221);
+  text-shadow: rgb(152, 62, 175) 2px 2px 2px;
+  
+
+
+} */
 
 .iconoMenu {
     display: inline-block ;
@@ -120,14 +172,16 @@ li a {
 
 
 }
-
+ */
 
 /* CONTACTO MOBILE VERSION */
 
 .wrapper {
   margin: 0 auto;
   width: 100%;
-  background-color: whitesmoke;
+  background-color: rgb(209, 135, 135);
+  display: flex;
+  flex-direction: column;
 
 
 }
@@ -138,29 +192,46 @@ li a {
 
 }
 
-/* fuente de body en biografia */
-.fontdiner{
-  font-family: 'Fontdiner Swanky';
-  font-size: 15px;
 
+/*TABLET VERSION 761 A 960 */
+
+@media screen and (min-width:761px){
+  .wrapper{
+    width: 760px;
+    
+   
+    
+  }
+
+  .titleContacto{
+    border-style: groove;
+    background-color: rgb(231, 171, 171);
+    font-size: 4em;
+    text-align: center;
+    width: 100%;
+  }
+  .containerContacto{
+    font-family: 'Franklin Gothic Medium';
+     display: flex;
+    flex-direction: row; 
+   flex-wrap: wrap;
+ 
+  justify-content: space-between;
+
+  
+  }
+
+section {
+  display:inline-flex;
+  width:max-content;
+  align-content: center;
+  border-style: outset;
+  border-color: rgb(179, 172, 172);
+  border-width: 3px;
+  background-color: rgb(231, 171, 171);
+ 
 }
 
-/*TABLET VERSION 361 A 960 */
-@media screen and (min-width:361px){
-.wrapper{
-  width: 360px;
-  background-color: whitesmoke;
-}
-.container{
-
-flex-direction: row;
-
-}
-
-section{
-  margin:0 3%
-
-}
 
 }
 
@@ -174,20 +245,113 @@ section{
 
 @media screen and (min-width:961px){
   .wrapper{
+    
     width: 960px;
+   
+   
+    
   }
-  .container{
+
+  .titleContacto{
+    border-style: groove;
+    background-color: rgb(231, 171, 171);
+    font-size: 4em;
+    text-align: center;
+  }
+  .containerContacto{
+    font-family: 'Franklin Gothic Medium';
   
-  flex-direction: row;
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: row;
+  align-items:center;
+  justify-content: space-between;
+
   
   }
-  
+
+section {
+  display:flex;
+  width:30%; 
+  /* height:fit-content ; */
+  align-items: stretch;
+  border-style: outset;
+  border-color: rgb(179, 172, 172);
+  border-width: 3px;
+  background-color: rgb(231, 171, 171);
+ 
+}
  
   
   }
 
   /* Footer */
+
+  /*HAY QUE ARREGLAR EL FOOTER PARA QUE ESTE ABAJO DEL TODO SIEMPRE*/
 footer{
+  position: absolute;
+  width: 100%;
+  height: 50px;
   background-color: rgb(120, 133, 128);
 
+}
+
+
+/* ESTILOS PARA EL TEXTO*/
+
+
+
+/* fuente de body en biografia */
+.fontdiner{
+  font-family: 'Fontdiner Swanky';
+  font-size: 15px;
+
+}
+
+.inicioStyle{
+
+  background-color: rgb(245, 234, 140);
+  font-family: Arial;
+  font-size: 16px;
+  font-weight: lighter;
+  text-align: start;
+
+
+
+
+}
+
+ .subrayado {
+        text-decoration-line: underline;
+        text-decoration-color:crimson;
+   }
+
+   .sombra {
+     text-shadow: darkblue 1px 2px 3px;
+    
+
+
+   }
+
+   .tituloArticle {
+      text-align: center;
+      color: darkorange;
+      text-shadow: black 2px 2px 2px;
+ 
+      font-size: 18px;
+      font-family: fantasy;
+
+
+   }
+body {
+   background-color: rgb(209, 135, 135);
+}
+
+
+/*control de  SALTO DE LÍNEA  en formularios*/
+input {
+  display: block;
+}
+label {
+  display: block;
 }
