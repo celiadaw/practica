@@ -27,6 +27,7 @@
 
  figure{
    display: flex;
+   justify-content: center;
  }
 
 footer{
@@ -37,33 +38,44 @@ footer{
   justify-content: space-between;
 
 }
+/* .iconoMenu {
+  display: flex;
+  
+   
 
-/* 
+} */
 
 header {
-
+ 
+ display: flex;
+ position: relative; align-content: flex-start;
   background-color: rgb(177, 231, 235);
   height: 8vh;
   /* vh determina porcentaje del viewport .. en este casoo seria 8/100*/
-  display:flex;
+   width: 100%;
    justify-content: space-between;
   flex-direction: row-reverse; 
 
 }
+/* nav {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+
+} */
 
 /*MENÚ*/
 
 /*
     MOBILE VERSION ---360 o menos
+
+
 */
-
-
-
-header ul {
+/* header ul {
 
     display: none;
 
-}
+} */
 
 /*REVISAR CÓDIGO YA QUE AL DESPLEGAR EL MENU LA LISTA COME EL ESPACIO DE DIV Y EL 
 TEXTO DEL TITULO BAJA Y QUEDA MAL*/
@@ -87,7 +99,7 @@ margin: 1vh;
 
 
 } */
-
+/* 
 .iconoMenu {
     display: inline-block ;
     
@@ -99,11 +111,11 @@ margin: 1vh;
 
     
 
-}
+} */
 
 
 
-
+/* 
 @media screen and (min-width: 768px){
           .menu-button{
             display: none;
@@ -122,10 +134,10 @@ margin: 1vh;
         line-height: 8vh;
         margin: 0 .5em;
       }
-}
+} */
 /* apartir de aquí damos funcionalidad a nuestro menú*/
 
-/* ocultamos la lista  */
+/* ocultamos la lista  
 
 ul{
   position: relative;
@@ -134,19 +146,19 @@ ul{
   background: lightcyan;
  
 }
-/* y aquí modificamos el estilo de la lista  cuando el check este seleccionado */
+/* y aquí modificamos el estilo de la lista  cuando el check este seleccionado 
 input:checked ~ ul {
   display: block;
 
 }
 
-/* Ocultamos el input para que "no se vea feo" */
+/* Ocultamos el input para que "no se vea feo" 
 
 input {
   display: none;
 }
 
-/* estilo en menu  */
+/* estilo en menu  
 
 header ul li {
   display: block;
@@ -172,7 +184,7 @@ li a {
 
 
 }
- */
+ 
 
 /* CONTACTO MOBILE VERSION */
 
@@ -197,12 +209,26 @@ li a {
 
 @media screen and (min-width:761px){
   .wrapper{
-    width: 760px;
-    
    
-    
+    width: 760px;
+          
   }
 
+  /* INDEX */
+  .indexSection{
+    display:flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-between;
+  } 
+
+  .indexArticle{
+    width: 100%;
+    flex-direction: row;
+    
+
+  } 
+ /* contacto */
   .titleContacto{
     border-style: groove;
     background-color: rgb(231, 171, 171);
@@ -221,7 +247,7 @@ li a {
   
   }
 
-section {
+.sectionContacto {
   display:inline-flex;
   width:max-content;
   align-content: center;
@@ -231,6 +257,9 @@ section {
   background-color: rgb(231, 171, 171);
  
 }
+
+
+
 
 
 }
@@ -251,6 +280,7 @@ section {
    
     
   }
+ /* MENU VERSION 961PX */
 
   .titleContacto{
     border-style: groove;
@@ -270,31 +300,11 @@ section {
   
   }
 
-section {
-  display:flex;
-  width:30%; 
-  /* height:fit-content ; */
-  align-items: stretch;
-  border-style: outset;
-  border-color: rgb(179, 172, 172);
-  border-width: 3px;
-  background-color: rgb(231, 171, 171);
- 
-}
+} 
  
   
-  }
 
-  /* Footer */
 
-  /*HAY QUE ARREGLAR EL FOOTER PARA QUE ESTE ABAJO DEL TODO SIEMPRE*/
-footer{
-  position: absolute;
-  width: 100%;
-  height: 50px;
-  background-color: rgb(120, 133, 128);
-
-}
 
 
 /* ESTILOS PARA EL TEXTO*/
@@ -308,18 +318,7 @@ footer{
 
 }
 
-.inicioStyle{
 
-  background-color: rgb(245, 234, 140);
-  font-family: Arial;
-  font-size: 16px;
-  font-weight: lighter;
-  text-align: start;
-
-
-
-
-}
 
  .subrayado {
         text-decoration-line: underline;
@@ -333,7 +332,7 @@ footer{
 
    }
 
-   .tituloArticle {
+   .tituloArticleIni {
       text-align: center;
       color: darkorange;
       text-shadow: black 2px 2px 2px;
@@ -355,3 +354,43 @@ input {
 label {
   display: block;
 }
+
+
+/* animaciones */
+
+
+
+
+
+@keyframes movimiento {
+  0% {
+      transform: translateY(400px) translateX(300px);
+  }
+   50%{
+      transform: rotateX(45deg) translateZ(200px);
+
+  }
+  100%{
+
+      transform: rotateY(-45deg) translateX(-300px)
+   
+  } 
+
+  }
+
+  .book {
+    
+    animation: movimiento 5s;
+    width: 80px;
+    height: 80px;
+
+  
+  }
+/* .sectionBio {
+  display: flex;
+  flex-direction: column;
+
+} */
+ 
+ 
+        
