@@ -86,7 +86,7 @@ header {
 .menu a {
     text-decoration: none;
     color: black;
-    font-size: 15px;
+  font-size:15px;
     font-weight: bolder;
   }
   
@@ -101,6 +101,7 @@ header {
     background-color: rgb(221, 235, 243);
     text-align: center;
     position: relative;
+   
     transition: background-color 3s;
   
   }
@@ -183,7 +184,6 @@ header {
   background-color: rgb(231, 171, 171);
  
 }
-
 
 
 
@@ -293,7 +293,7 @@ label {
       transform: translateY(400px) translateX(300px);
   }
    50%{
-      transform: rotateX(45deg) translateZ(200px);
+      transform: rotateX(45deg) translateZ(-200px);
 
   }
   100%{
@@ -325,5 +325,37 @@ table.manji td {
 
 table.manji td.with-color {
   background-color: rgb(15, 11, 12);
-}  
+} 
+
+.trabajoSection{
+  display:flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: space-around;
+  
+} 
+
+.trabajoArticle{
+  width: 100%;
+  align-self: center;
+  
+
+} 
+
+.trabajoArticle h2 {
+    align-self: center;
+    width: 20%;
+    padding: 3px;
+
+}
+
+.trabajoArticle table {
+  align-self: center;
+  padding: 2%;
+  margin: 1%;
+  width: 40%;
+}
+
+
+
         
